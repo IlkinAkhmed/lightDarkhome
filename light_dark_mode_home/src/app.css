@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -7,16 +7,20 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
+:root {
   --main-text-color: rgb(0, 0, 0);
   --main-bg-color: rgb(231, 185, 129);
   --second-bg-color: white;
   --second-text-color: rgb(130, 130, 130);
 }
-.dark{
+.dark {
   --main-text-color: rgb(255, 0, 0);
   --main-bg-color: rgb(39, 39, 39);
   --second-text-color: rgb(255, 255, 255);
   --second-bg-color: rgb(80, 52, 28);
   transition: all 0.5s;
+}
+.open-close {
+  transition: translateY(300px);
+  transition: 0.5s;
 }

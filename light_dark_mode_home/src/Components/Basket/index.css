@@ -1,0 +1,38 @@
+
+.basket{
+    width: 300px;
+    height: 100vh;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--second-bg-color);
+    transition: 0.5s;
+}
+.basket p{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.basket-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+
+}
+.basket-inner .basketcard{
+    width: 100%;
+    display: flex;
+}
+.basket-inner .basketcard .basketimage{
+    width: 50%;
+}
+.basket-inner .basketcard .baskettexts{
+    width: 50%;
+}
+.basket-inner .basketcard .basketimage img{
+    width: 100%;
+}

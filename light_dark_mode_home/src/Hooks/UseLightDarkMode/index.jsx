@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
 import React from 'react'
 
-const UseLightDarkMode = () => {
+const useLightDarkMode = () => {
 
   const [IsDark, setIsDark] = useState(localStorage.getItem('theme') ? JSON.parse(localStorage.getItem('theme')) : false)
 
@@ -13,6 +13,8 @@ const UseLightDarkMode = () => {
 
   function ChangeTheme() {
     document.body.classList.toggle('dark')
+    document.body.classList.toggle('hi')
+    
     setIsDark(!IsDark)
   }
 
@@ -20,4 +22,4 @@ const UseLightDarkMode = () => {
   return {IsDark,ChangeTheme}
 }
 
-export default UseLightDarkMode
+export default useLightDarkMode

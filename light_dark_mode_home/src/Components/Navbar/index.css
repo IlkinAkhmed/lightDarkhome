@@ -8,6 +8,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 4;
 }
 
 .navinner {
@@ -40,11 +41,16 @@ nav {
     justify-content: space-around;
     font-weight: bold;
 }
-.navtext i{
+.navtext .fa-sun, .fa-moon{
     padding: 10px;
     border-radius: 50%;
     background-color: var(--second-bg-color);
     cursor: pointer;
     color: var(--second-text-color);
     transition: all 0.5s;
+}
+.navtext .fa-basket-shopping{
+    margin-left: 30px;
+    color: var(--main-text-color);
+    cursor: pointer;
 }
